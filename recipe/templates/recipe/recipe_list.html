@@ -1,0 +1,9 @@
+{% if recipes %}
+{% for each in recipes %}<br>
+<a href="/recipe/{{each.id}}/details/">{{each.recipe_name}}</a> <a href="/recipe/{{each.id}}/delete/">delete</a><br>
+{% endfor %}<br>
+{% else %}<br>
+    No data Created
+{% endif %}<br>
+<a href="/recipe/create/">Add Recipe</a><br>
+

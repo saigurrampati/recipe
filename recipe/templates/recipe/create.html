@@ -1,0 +1,10 @@
+<h1> create recipe</h1>
+
+<form action="/recipe/save/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    name : <input type="text" name="recipe_name"><br>
+    ingredients : <input type="text" name="ingredients"><br>
+    process : <textarea name="process"></textarea><br>
+    images : <input type="file" name="images"><br>
+    <input type="submit" value="create">
+</form>
