@@ -1,0 +1,12 @@
+<h1>Log In </h1>
+<form action="/recipe/login_status/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    username :<input type="text" name="username"><br>
+    password:<input type="password" name="password"><br>
+    <br>
+  <input type="submit" name="LogIn">
+</form>
+<a href="/recipe/register_page/"><button>register</button></a>
+<br><br>
+<a href="/recipe/logout/"><button>LogOut</button></a>
